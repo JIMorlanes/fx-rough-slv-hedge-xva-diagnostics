@@ -1,0 +1,4 @@
+maturity,rough_pfe_gap_pct,rough_wwr_delta_pct,rough_model_gap_vs_heston_pct,desk_action
+1M,4.56,5.73,0.56,Low materiality; no escalation from XVA alone
+3M,9.85,11.63,2.59,Monitor; positive stable model-risk signal
+1Y,13.74,20.49,4.50,Review-worthy; strongest XVA model-risk signal
