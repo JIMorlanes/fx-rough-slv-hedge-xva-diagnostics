@@ -2,7 +2,11 @@
 
 The reported paper results are generated from saved experiment outputs, not from manually typed tables.
 
-This public companion repository is designed for portfolio review and technical interview discussion. It provides selected result summaries, figure outputs, methodology notes, validation summaries, and a reduced smoke-test workflow. The full research implementation, calibration scripts, Monte Carlo pipeline, seed packs, raw outputs, and validation logs are kept private.
+The reported figures and tables quantify hedge-transfer gaps, tail hedge-loss deterioration, exposure sensitivity, incremental WWR impact, and CVA-style reserve effects under the controlled same-surface setup.
+
+This public companion repository is designed for portfolio review and technical interview discussion. It provides selected result summaries, figure outputs, methodology notes, validation summaries, and a reduced smoke-test workflow.
+
+The full research implementation, calibration scripts, Monte Carlo pipeline, seed packs, raw outputs, result-generation scripts, and validation logs are not released publicly. They can be reviewed live during a technical interview.
 
 ## Reproducibility Scope
 
@@ -15,15 +19,15 @@ This repository shows:
 - methodology and validation notes,
 - a reduced smoke-test workflow.
 
-It does not release the full research engine, calibration scripts, Monte Carlo path sets, seed packs, raw outputs, or full validation logs.
+It does not release the full research engine, Monte Carlo path sets, seed packs, raw outputs, result-generation scripts, or full validation logs.
 
 ## Reported Experiment Results
 
-The paper results are based on the reported path counts, frozen hedge surfaces, multi-seed checks, and saved validation outputs from the full research repository.
+The paper results are based on the reported path counts, frozen hedge surfaces, multi-seed checks, and saved validation outputs from the full research implementation.
 
 The public repository includes summary-level evidence sufficient to review the project design, inspect the reported outputs, and discuss the methodology. It is a controlled evidence pack rather than a full engine release.
 
-During a technical interview, the full research repository can be reviewed live to demonstrate:
+During a technical interview, the full research implementation can be reviewed live to demonstrate:
 
 - code structure,
 - commit history,
@@ -44,6 +48,6 @@ During a technical interview, the full research repository can be reviewed live 
 
 ## Why the Full Pipeline Is Not Public
 
-The full research repository contains the complete pricing and simulation engine, calibration workflow, raw experiment outputs, validation logs, and result-generation scripts. It is therefore kept private and is not released under an open-source license.
+The full research implementation contains the complete pricing and simulation engine, calibration workflow, raw experiment outputs, validation logs, and result-generation scripts. It is therefore kept private and is not released under an open-source license.
 
-This repository should be read as a public companion evidence pack: enough to assess the project, inspect the reported outputs, and support technical discussion, while keeping the full research engine private.
+This repository should be read as a public companion evidence pack: enough to assess the project, inspect the reported outputs, and support technical discussion, while keeping the full research engine and raw pipeline private.
