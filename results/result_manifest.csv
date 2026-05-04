@@ -1,0 +1,6 @@
+paper_block,public_evidence_file,source_pipeline,status,comment
+Hedge transfer 1M and 3M,results/hedge_transfer_summary.csv,full diagnostics/hedge pipeline,not_public,Summary table reported in paper; full generation pipeline kept private
+XVA materiality 1M 3M 1Y,results/xva_materiality_summary.csv,full diagnostics/xva pipeline,not_public,Summary table reported in paper; full generation pipeline kept private
+XVA seed robustness,results/xva_seed_metric_summary.csv,full diagnostics/xva pipeline,not_public,Summary table reported in paper; full generation pipeline kept private
+Product-level attribution 1Y,results/xva_product_attribution_1y.csv,full diagnostics/xva pipeline,not_public,Summary table reported in paper; full generation pipeline kept private
+Surface validation,technical paper appendix,full diagnostics/surfaces pipeline,summarized,Validation evidence summarized in the paper; full logs kept private
