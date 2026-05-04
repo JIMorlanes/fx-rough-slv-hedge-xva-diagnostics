@@ -36,6 +36,10 @@ During a technical interview, the full research implementation can be reviewed l
 - validation logs,
 - table and figure generation workflow.
 
+## Implementation Credibility
+
+The full research implementation uses a hybrid Python/C++ architecture: Python for calibration, orchestration, diagnostics, and pybind11 task execution; C++ for the path-parallel Monte Carlo core with OpenMP parallelism. This supports live discussion of implementation choices, runtime trade-offs, validation logs, seed summaries, and result provenance.
+
 ## Key Result Provenance
 
 | Paper block | Public evidence file | Source pipeline |
