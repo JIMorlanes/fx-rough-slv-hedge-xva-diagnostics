@@ -52,8 +52,8 @@ can be reviewed live during a technical interview, but are not released publicly
 - `docs/` — executive summary and watermarked technical paper
 - `figures/` — selected final figures
 - `results/` — selected result summaries and result manifest
-- `demo/` — reduced smoke-test demo
-- `src_excerpts/` — selected source-code excerpts
+- `demo/` — lightweight executable toy example illustrating the hedge-transfer diagnostic logic
+- `src_excerpts/` — selected Python and C++ source-code excerpts
 - `DESK_RELEVANCE.md` — desk-facing interpretation
 - `REPRODUCIBILITY_NOTE.md` — result provenance and reproducibility scope
 - `LIMITATIONS_AND_CONTROLS.md` — limitations and controls
