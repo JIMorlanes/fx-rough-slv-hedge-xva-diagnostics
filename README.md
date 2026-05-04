@@ -21,6 +21,17 @@ architecture documentation, and a reduced reproducibility demo. The full researc
 implementation and production-scale result-generation pipeline are private and
 may be reviewed live during a technical interview.
 
+## Repository contents
+
+- `docs/` — executive summary and watermarked technical paper
+- `figures/` — selected final figures
+- `results/` — selected result summaries and result manifest
+- `demo/` — reduced smoke-test demo
+- `src_excerpts/` — selected source-code excerpts
+- `DESK_RELEVANCE.md` — desk-facing interpretation
+- `REPRODUCIBILITY_NOTE.md` — result provenance and reproducibility scope
+- `LIMITATIONS_AND_CONTROLS.md` — limitations and controls
+
 ## Use and permissions
 
 Copyright (c) 2026 José Igor Morlanes. All rights reserved.
