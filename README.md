@@ -43,13 +43,12 @@ can propagate into tail exposure, incremental WWR delta, and CVA-style reserve
 diagnostics. In the reported setup, the strongest review-worthy XVA signal
 appears at 1Y and remains portfolio- and netting-set dependent.
 
-This repository contains selected results, figures, methodology notes,
-architecture documentation, and a reduced reproducibility demo. The full research
-implementation, calibration scripts, Monte Carlo pipeline, and validation logs
-can be reviewed live during a technical interview, but are not released publicly.
+This repository is a public evidence pack for technical interview discussion. It contains selected result summaries, figures, methodology notes, source-code excerpts, and a reduced reproducibility demo.
+
+The full research implementation, Monte Carlo pipeline, frozen hedge surfaces, seed packs, pathwise hedge P&L arrays, and validation logs are not released publicly. They can be discussed during a technical interview.
 
 ## Repository contents
-- `docs/` — executive summary and watermarked technical paper
+- `docs/` — public project teaser
 - `figures/` — selected final figures
 - `results/` — selected result summaries and result manifest
 - `demo/` — lightweight executable toy example illustrating the hedge-transfer diagnostic logic
