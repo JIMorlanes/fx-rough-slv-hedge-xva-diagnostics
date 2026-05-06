@@ -111,7 +111,7 @@ The full research implementation, Monte Carlo pipeline, frozen hedge surfaces, s
 
 ## Repository contents
 
-- `docs/` — public project teaser, XVA assumptions, surface-control notes and architecture
+- `docs/` — front-office summary, XVA assumptions, surface-control notes and architecture
 - `figures/` — selected final figures
 - `results/` — selected result summaries, metadata, and result manifest
 - `demo/` — lightweight executable toy example illustrating the hedge-transfer diagnostic logic
