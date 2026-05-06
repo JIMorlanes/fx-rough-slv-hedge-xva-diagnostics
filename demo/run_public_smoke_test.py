@@ -41,8 +41,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-ROOT = Path(__file__).resolve().parents[2]
-RESULTS_DIR = ROOT / "results" / "public_smoke"
+ROOT = Path(__file__).resolve().parents[1]
+RESULTS_DIR = ROOT / "demo" / "results"
 SUMMARY_CSV = RESULTS_DIR / "hedge_summary.csv"
 PLOT_PNG = RESULTS_DIR / "pnl_hist.png"
 

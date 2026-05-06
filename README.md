@@ -25,7 +25,7 @@ make public-smoke
 ```
 
 This writes a toy hedge P&L summary and plot under
-`demo/results/public_smoke/`. The demo validates workflow shape, dependencies,
+`demo/results/`. The demo validates workflow shape, dependencies,
 and output format. It is not intended to reproduce the full 75k/200k-path
 private research results.
 
