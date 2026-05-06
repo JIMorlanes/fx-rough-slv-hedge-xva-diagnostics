@@ -1,0 +1,76 @@
+{
+  "public_role": "provenance evidence for XVA materiality summary",
+  "source_file_private": "xva_summary_final.json",
+  "seed": 123,
+  "n_paths": 20000,
+  "n_steps": 63,
+  "markets": [
+    "Heston-SLV",
+    "Rough-SLV"
+  ],
+  "maturities": [
+    "1M",
+    "3M",
+    "1Y"
+  ],
+  "portfolio": {
+    "long_vanilla_atm": 1.0,
+    "long_forward_start_atm": 1.0,
+    "short_doc": 1.0,
+    "K": 100.0,
+    "B": 90.0,
+    "t_start": "0.5 * maturity"
+  },
+  "reported_metrics": [
+    "EE",
+    "ENE",
+    "EPE",
+    "CVA_no_WWR",
+    "CVA_WWR",
+    "DVA",
+    "FVA",
+    "XVA_total_no_WWR",
+    "XVA_total_WWR"
+  ],
+  "headline_values": {
+    "Heston_SLV_1M": {
+      "EPE": 0.761141766109307,
+      "CVA_no_WWR": 0.000760660362451963,
+      "CVA_WWR": 0.0007742432938546552,
+      "XVA_total_WWR": 0.0010911851115429732
+    },
+    "Rough_SLV_1M": {
+      "EPE": 0.7605455385364783,
+      "CVA_no_WWR": 0.0007600645309941369,
+      "CVA_WWR": 0.000773934092356725,
+      "XVA_total_WWR": 0.0010906276469376153
+    },
+    "Heston_SLV_3M": {
+      "EPE": 1.354207427242599,
+      "CVA_no_WWR": 0.004055015364374663,
+      "CVA_WWR": 0.004353735855176805,
+      "XVA_total_WWR": 0.006043325590332915
+    },
+    "Rough_SLV_3M": {
+      "EPE": 1.3397464518978461,
+      "CVA_no_WWR": 0.004011709636268772,
+      "CVA_WWR": 0.005775867926389823,
+      "XVA_total_WWR": 0.007447413608168478
+    },
+    "Heston_SLV_1Y": {
+      "EPE": 3.097709426954465,
+      "CVA_no_WWR": 0.03691108783093837,
+      "CVA_WWR": 0.04393284442997142,
+      "XVA_total_WWR": 0.05931246435952907
+    },
+    "Rough_SLV_1Y": {
+      "EPE": 3.0410787785345796,
+      "CVA_no_WWR": 0.03623614586341988,
+      "CVA_WWR": 0.043762124118071684,
+      "XVA_total_WWR": 0.058860518227829964
+    }
+  },
+  "full_EE_ENE_time_series_public": false,
+  "raw_pathwise_outputs_public": false,
+  "full_private_run_available_for_live_review": true
+}

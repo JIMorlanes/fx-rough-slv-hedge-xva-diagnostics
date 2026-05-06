@@ -1,0 +1,44 @@
+{
+  "public_role": "surface validation evidence for frozen Heston-SLV hedge surface",
+  "source_file_private": "heston_calib_heston_slv_vanilla_3m_state3d_seed123_validation.json",
+  "status": "ok",
+  "surface_role": "frozen_heston_slv_hedge_surface",
+  "tag": "heston_calib_heston_slv_vanilla_3m_state3d_seed123",
+  "expected_shape": [
+    50,
+    31,
+    81
+  ],
+  "grid": {
+    "tau_nodes": 50,
+    "v_nodes": 31,
+    "spot_nodes": 81,
+    "tau_min": 0.000001,
+    "tau_max": 0.25,
+    "v_min": 0.01,
+    "v_max": 0.12,
+    "spot_min": 40.0,
+    "spot_max": 180.0
+  },
+  "surface_fields": [
+    "price_tau_v_S",
+    "delta_tau_v_S",
+    "vega_tau_v_S"
+  ],
+  "checks": {
+    "price_nan_count": 0,
+    "price_inf_count": 0,
+    "price_min": 0.0,
+    "price_max": 79.75432391588221,
+    "delta_nan_count": 0,
+    "delta_inf_count": 0,
+    "delta_min": 0.0,
+    "delta_max": 1.0,
+    "vega_nan_count": 0,
+    "vega_inf_count": 0,
+    "vega_min": 0.0,
+    "vega_max": 71.51358709157866
+  },
+  "issues": [],
+  "full_private_validation_log_available_for_live_review": true
+}

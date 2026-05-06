@@ -1,0 +1,34 @@
+{
+  "public_role": "provenance evidence for hedge-transfer summary",
+  "source_file_private": "hedge_summary_heston_vanilla_T0.083333_steps2016_seed123.json",
+  "git_commit": "efddb87",
+  "true_market": "HestonSLV",
+  "hedge_model": "HestonSLV",
+  "pricing_model": "HestonSLV",
+  "T": 0.083333,
+  "maturity_label": "1M",
+  "hedge_steps": 2016,
+  "n_paths": 150000,
+  "n_paths_price": 100000,
+  "n_paths_inner": 1000,
+  "seed": 123,
+  "seed_price": 100250,
+  "premium_mode": "heston_mc",
+  "premium_heston_slv": 2.1609708320913277,
+  "surface_mode": "prebuilt3d",
+  "surface_role": "frozen_heston_slv_hedge_surface",
+  "surface_book_tag": "heston_slv_spot100_widev75k_1m_book_ATMF_state3d_seed123",
+  "surface_hedge_tag": "heston_slv_spot100_widev75k_1m_hedge_105F_state3d_seed123",
+  "result_blocks": [
+    "GK_DELTA",
+    "HESTON_SLV_DELTA",
+    "HESTON_SLV_DELTA_VEGA"
+  ],
+  "headline_tail_metrics_bps": {
+    "GK_DELTA_ES01": -5883.481375132079,
+    "HESTON_SLV_DELTA_ES01": -4166.468083024294,
+    "HESTON_SLV_DELTA_VEGA_ES01": -1999.1451718321548
+  },
+  "raw_pathwise_outputs_public": false,
+  "full_private_run_available_for_live_review": true
+}
