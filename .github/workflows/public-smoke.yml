@@ -22,3 +22,6 @@ jobs:
 
       - name: Run public smoke test
         run: make public-smoke
+
+      - name: Run public tests
+        run: make test
