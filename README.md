@@ -29,6 +29,12 @@ This writes a toy hedge P&L summary and plot under
 and output format. It is not intended to reproduce the full 75k/200k-path
 private research results.
 
+Run the public tests:
+
+```bash
+make test
+```
+
 The private research workflow starts from FX vanilla smile quotes, calibrates a
 same-surface Heston-SLV/Rough-SLV setup, simulates large Heston/Rough path
 sets, and produces hedge-transfer and XVA diagnostics. The public smoke demo
