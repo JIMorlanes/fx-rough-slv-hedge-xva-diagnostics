@@ -1,0 +1,2 @@
+demo_name,surface,product,maturity,path_count,hedge_steps,seed,premium,mean_pnl,std_pnl,q01_pnl,q05_pnl,es01_pnl,mean_bps_of_premium,q01_bps_of_premium,es01_bps_of_premium,runtime_seconds,status
+public_toy_hedge_smoke,toy_three_by_three_iv_surface,atm_european_call,0.25,5000,48,20260506,3.7110139988,-0.0778589158,0.4513852825,-1.2754272102,-0.7798802024,-1.5828211547,-209.8049638702,-3436.869843734,-4265.1985556033,0.647205,PASS

@@ -1,0 +1,4 @@
+maturity,atm_error_vol_points,rr25_error_vol_points,bf25_error_vol_points,rr10_error_vol_points,bf10_error_vol_points,max_abs_iv_error_vol_points,error_unit,status
+1M,0.000000,0.221017,-0.356203,-0.117676,0.117964,0.466712,vol_points,PASS
+3M,0.000000,0.173232,-0.392022,-0.079770,0.129456,0.478638,vol_points,PASS
+1Y,0.000000,0.124874,-0.472232,-0.026998,0.161997,0.534669,vol_points,PASS

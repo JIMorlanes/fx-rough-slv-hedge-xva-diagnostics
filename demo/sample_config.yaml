@@ -1,0 +1,53 @@
+# Public smoke-demo configuration.
+#
+# This file documents the toy inputs used by
+# demo/results/public_smoke/run_public_smoke_test.py.
+#
+# It is intentionally public-safe. It does not point to private calibrated
+# surfaces, frozen hedge grids, seed packs, pathwise arrays, validation logs,
+# or rough/Heston model engines.
+#
+# Note: the public smoke script uses hard-coded toy inputs. This YAML file
+# documents the public-safe configuration and workflow contract.
+
+demo_name: public_toy_hedge_smoke
+workflow_scope: public_smoke_only
+run_command: make public-smoke
+expected_runtime: under_5_seconds_on_laptop
+
+private_workflow_reference:
+  starts_from: FX vanilla smile quotes
+  then:
+    - same-surface Heston-SLV/Rough-SLV calibration
+    - large Heston/Rough path simulation
+    - hedge-transfer diagnostics
+    - XVA diagnostics
+    - CSV and figure generation
+  private_artifacts_not_used:
+    - frozen calibrated surfaces
+    - rough/Heston model engines
+    - 75000/200000 path seed packs
+    - raw pathwise hedge PnL arrays
+    - validation logs
+
+public_smoke_inputs:
+  surface: toy_three_by_three_iv_surface
+  product: atm_european_call
+  spot0: 100.0
+  strike: 100.0
+  maturity_years: 0.25
+  domestic_rate: 0.01
+  path_count: 5000
+  hedge_steps: 48
+  seed: 20260506
+  toy_surface:
+    maturity_grid_years: [0.0833333333, 0.25, 0.50]
+    moneyness_grid: [0.85, 1.00, 1.15]
+    iv_grid:
+      - [0.205, 0.185, 0.178]
+      - [0.195, 0.180, 0.174]
+      - [0.188, 0.176, 0.171]
+
+public_outputs:
+  summary_csv: demo/results/public_smoke/hedge_summary.csv
+  plot_png: demo/results/public_smoke/pnl_hist.png
