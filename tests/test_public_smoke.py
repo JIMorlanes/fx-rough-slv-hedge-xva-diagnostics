@@ -1,3 +1,10 @@
+"""
+Public-safe smoke tests for the toy hedge demo.
+
+These tests cover only the exported demo helpers and intentionally avoid the
+private calibration, simulation, and XVA engines.
+"""
+
 import math
 
 from demo.run_public_smoke_test import (
@@ -13,10 +20,14 @@ from demo.run_public_smoke_test import (
 
 
 def test_norm_cdf_at_zero():
+    """Check the normal CDF anchor used by the toy Black-Scholes helpers."""
+
     assert abs(norm_cdf(0.0) - 0.5) < 1.0e-12
 
 
 def test_toy_surface_vol_is_positive():
+    """Verify interpolation returns a plausible positive toy implied vol."""
+
     surface = load_toy_surface()
     vol = interp_toy_vol(surface, tau=0.25, spot=100.0, strike=100.0)
     assert vol > 0.0
@@ -24,6 +35,8 @@ def test_toy_surface_vol_is_positive():
 
 
 def test_black_price_and_delta_are_sane():
+    """Confirm the public pricing helpers produce basic no-arbitrage ranges."""
+
     price = black_call_price(spot=100.0, strike=100.0, tau=0.25, rate=0.01, vol=0.18)
     delta = black_delta(spot=100.0, strike=100.0, tau=0.25, rate=0.01, vol=0.18)
     assert price > 0.0
@@ -31,6 +44,8 @@ def test_black_price_and_delta_are_sane():
 
 
 def test_simulated_paths_shape():
+    """Ensure the toy simulator returns one spot vector per time step."""
+
     surface = load_toy_surface()
     paths = simulate_toy_paths(
         surface,
@@ -49,6 +64,8 @@ def test_simulated_paths_shape():
 
 
 def test_delta_hedge_pnl_summary_has_required_fields():
+    """Exercise the public hedge workflow and required summary statistics."""
+
     surface = load_toy_surface()
     paths = simulate_toy_paths(
         surface,
