@@ -1,5 +1,30 @@
 # XVA Assumptions
 
+## Public diagnostic convention
+
+| Item | Convention |
+|---|---|
+| Counterparty | Single stylized counterparty |
+| Netting set | ATM vanilla, forward-start ATM option, short down-and-out call |
+| Perspective | Bank / desk perspective |
+| Portfolio value | Simulated future netted portfolio value, `V(t)` |
+| Positive exposure | `PE(t) = max(V(t), 0)` |
+| Negative exposure | `NE(t) = max(-V(t), 0)` |
+| EE | `E[max(V(t), 0)]` |
+| EPE | Time-average of EE over the exposure grid |
+| ENE | `E[max(-V(t), 0)]` |
+| PFE95 | 95% quantile of `max(V(t), 0)` at each exposure date |
+| CVA convention | Unilateral CVA-style diagnostic |
+| Credit setup | Stylized hazard-rate / LGD setup; same credit assumptions across model worlds |
+| Discounting | Same domestic discounting convention across model worlds |
+| WWR | Dependence stress between positive exposure and credit deterioration proxy |
+| Collateral | CSA, VM, IM, MPR, MVA, FVA and capital effects excluded |
+| Purpose | Relative exposure-timing and reserve-sensitivity comparison, not production XVA |
+
+The absolute CVA-style number is not intended as a production reserve. The
+relevant signal is the relative Rough-SLV versus Heston-SLV movement under the
+same portfolio, credit, discounting, and netting assumptions.
+
 ## Purpose
 
 The XVA extension tests whether volatility-model misspecification propagates
