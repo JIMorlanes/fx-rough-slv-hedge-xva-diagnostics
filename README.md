@@ -1,5 +1,15 @@
 # FX Rough-SLV Hedge-Transfer and XVA Diagnostics
 
+## Repository Scope
+
+This repository is a reduced public evidence-pack demo for technical interview discussion. 
+It is not the full research repository. It contains selected result summaries, figures, methodology notes, 
+source-code excerpts, and a reduced reproducibility demo.
+
+The full research implementation, Monte Carlo pipeline, frozen hedge surfaces, seed packs, pathwise 
+hedge PnL arrays, and validation logs are maintained separately and are not released publicly. 
+The methodology, implementation choices, and validation workflow can be discussed during a technical interview.
+
 ## What to look at first
 
 1. `docs/front_office_summary.pdf` — front-office project summary.
