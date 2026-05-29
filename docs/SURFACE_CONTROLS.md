@@ -42,8 +42,7 @@ The desk implication is direct: a hedge that reduces ES inside the pricing model
 should not automatically receive the same stress-risk credit under alternative
 realized dynamics.
 
-This is the control that makes the hedge-transfer result credible.
-
-If the static surface, book valuation surface, and hedge surface are fixed, then
-the remaining hedge slippage or exposure-profile change is not a vanilla
-calibration story. It is evidence of volatility-dynamics model risk.
+This control makes the hedge-transfer result interpretable. Because the static surface,
+book valuation surface, and hedge surface are held fixed, any residual hedge slippage or 
+exposure-profile change is not primarily a vanilla calibration effect. It is evidence of 
+volatility-dynamics model risk.
