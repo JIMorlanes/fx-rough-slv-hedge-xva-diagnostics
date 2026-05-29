@@ -42,8 +42,6 @@ The desk implication is direct: a hedge that reduces ES inside the pricing model
 should not automatically receive the same stress-risk credit under alternative
 realized dynamics.
 
-## Interview interpretation
-
 This is the control that makes the hedge-transfer result credible.
 
 If the static surface, book valuation surface, and hedge surface are fixed, then
